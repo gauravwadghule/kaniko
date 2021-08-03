@@ -9,7 +9,7 @@ spec:
       - name: kaniko
         image: gcr.io/kaniko-project/executor:latest
         args: ["--dockerfile=Dockerfile",
-               "--context=git://github.com/sarvabhowma1995/kaniko.git#refs/heads/master",
+               "--context=git://github.com/sarvabhowma1995/kaniko.git#refs/heads/main",
                "--destination=jsarvabhowma1/ownnginx:v1"]
         volumeMounts:
         - name: kaniko-secret
