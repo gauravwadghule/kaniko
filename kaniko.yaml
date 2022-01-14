@@ -10,7 +10,7 @@ spec:
         image: gcr.io/kaniko-project/executor:latest
         args: ["--dockerfile=Dockerfile",
                "--context=git://github.com/gauravwadghule/kaniko.git#refs/heads/main",
-               "--destination=wadghulegaurav/kaniko-multiarch-poc:v1",
+               "--destination=wadghulegaurav/kaniko-multiarch-poc:arm",
                "--customPlatform=linux/arm"]
         volumeMounts:
         - name: kaniko-secret
