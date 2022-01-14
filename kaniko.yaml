@@ -9,8 +9,9 @@ spec:
       - name: kaniko
         image: gcr.io/kaniko-project/executor:latest
         args: ["--dockerfile=Dockerfile",
-               "--context=git://github.com/sarvabhowma1995/kaniko.git#refs/heads/main",
-               "--destination=jsarvabhowma1/ownnginx:v1"]
+               "--context=git://github.com/gauravwadghule/kaniko.git#refs/heads/main",
+               "--destination=wadghulegaurav/kaniko-multiarch-poc:v1",
+               "--customPlatform=linux/arm"]
         volumeMounts:
         - name: kaniko-secret
           mountPath: "/kaniko/.docker"
